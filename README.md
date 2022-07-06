@@ -42,7 +42,7 @@
   <h3 align="center">Api Node React</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Simple project with node js and react js
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
