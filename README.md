@@ -30,10 +30,10 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/icons8-javascript-144.png" alt="Logo" width="80" height="80">
+    <img src="https://img.icons8.com/color/144/000000/javascript--v1.png"/>
   </a>
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/icons8-node-js-144.png" alt="Logo" width="80" height="80">
+    <img src="https://img.icons8.com/fluency/144/000000/node-js.png"/>
   </a>
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="https://img.icons8.com/external-others-amoghdesign/144/000000/external-react-native-soleicons-fill-vol-1-others-amoghdesign.png"/>
