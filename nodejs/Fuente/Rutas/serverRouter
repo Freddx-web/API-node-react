@@ -1,0 +1,81 @@
+
+// Express
+const express = require('express');
+// Enrutador
+const router = express.Router();
+//MySQL
+var mysql = require('mysql');
+// Connect DB
+//const { con } = require('../config/connectMysql');
+// Db Mongo
+//const {connect} = require('../config/mongo.insert.js');
+
+var MongoClient = require('mongodb').MongoClient;
+
+var url = "mongodb://localhost:27017/mydb";
+const connect =  MongoClient.connect(url, function(err, db) {
+
+    try {
+
+        if (err) throw err;
+            console.log("CONNECTED MongoDB SERVER. Successfully");
+            db.close();
+        } catch (e) {
+            console.error(e);
+    }
+});
+
+
+
+var con = mysql.createConnection({
+
+    host: "localhost",
+    user: "root",
+    password: "",
+    database: "data_base"
+
+});
+
+/* Ogtener pag principal  - GET index page. */
+router.get('/', async function(req, res, next) {
+  return res.status(202).json({ 
+    page : "page  - Server",
+    message : "Panel Server DB." 
+  });
+});
+
+/* Ogtener pag principal  - GET index page. */
+router.get('/mysql', async function(req, res, next) {
+  await con.connect(function(err) {
+  if (err) { throw err };
+    con.query("SELECT * FROM users", function (err, result, fields) {
+    if (err) { throw err };
+      console.log(result);
+      return res.status(200).json({ 
+        page: "auth / sql" ,
+        message: "Page - Authhh!", 
+        result 
+      });
+      //db.close();
+    });
+  });
+});
+
+// Ogtener Consulta MongoDB JSON
+router.get('/mongodb', async function(req, res, next){
+  await MongoClient.connect(url, function(err, db) {
+    if (err) throw err;
+    var dbo = db.db("data_app");
+    dbo.collection("users").find({}).toArray(function(err, result) {
+      if (err) throw err;
+      console.log(result);
+      return res.status(200).json({ 
+        page: "auth / mongodb" ,
+        message: "Page - Authhh!", 
+        result 
+      });
+      //db.close();
+    });
+  });
+});
+
