@@ -42,7 +42,7 @@
   <h3 align="center">Api Node React</h3>
 
   <p align="center">
-    Simple javascript project with node js and react js
+    Simple javascript project with Node js and React js
     <br />
     <!--
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
