@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://img.icons8.com/color/144/000000/javascript--v1.png"/>
+    <img src="https://img.icons8.com/color/144/000000/bootstrap.png"/>
   </a>
   <a href="https://github.com/othneildrew/Best-README-Template">
     <img src="https://img.icons8.com/fluency/144/000000/node-js.png"/>
