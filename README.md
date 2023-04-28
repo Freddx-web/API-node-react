@@ -42,9 +42,6 @@
     <img src="https://img.icons8.com/fluency/144/null/iphone14-pro.png"/>
   </a>
   <a href="#">
-    <img src="https://img.icons8.com/external-others-amoghdesign/144/000000/external-react-native-soleicons-fill-vol-1-others-amoghdesign.png"/>
-  </a>
-  <a href="#">
     <img src="https://img.icons8.com/fluency/144/null/android-os.png"/>
   </a>
 
